@@ -1,0 +1,246 @@
+
+
+/* ==========================================================================
+   Preetham's custom styles
+   ========================================================================== */
+
+.navbar-brand{padding: 10px 15px;height: 100px}
+
+@media(min-width: 1200px){
+	.container{width: 970px;}
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Oswald Light'), local('Oswald-Light'), url(../fonts/oswald.woff) format('woff');
+}
+@media (min-width: 768px){
+	.navbar-nav>li>a {
+		padding: 30px 0 0 0;
+		color: #313131;
+		width: 95px;
+	}
+	.navbar-nav>li>a.active {
+		color: #4d8dd4;
+	}
+	.navbar-nav>li>a:hover{
+		background: transparent none;
+	}
+	.navbar-nav.navbar-right:last-child {
+		margin-right: -24px;
+	}
+}
+.nav>li{
+	border-right: 1px solid #d1d1d1;
+	text-align: center;
+}
+.nav>li:last-child{
+	border-right: 0 none;
+}
+.navbar-nav > li > a {
+text-shadow: 0px 0px 0px rgba(79, 144, 210, 1);
+}
+	.jumbotron{
+		background: #4168ab;
+		padding-bottom: 0;
+		position: relative;
+		min-height: 290px;
+		margin-bottom: 0px;
+	}
+	.jumbotron .container{position: relative;}
+
+@media screen and (min-width: 768px){
+	.jumbotron .caribou-img {
+		position: absolute;
+		top: -52px;right: 0;
+	}	
+
+	.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next{
+		font-size: 18px;
+		width: 35px;
+		height: 30px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+	.carousel-caption {
+		left: 15.5%;
+		right: 15.5%;
+	}
+}
+@media(min-width: 1200px){
+.jumbotron .caribou-img {
+	position: absolute;
+	top: -52px;right: 210px;
+}
+}
+.jumbotron h1 {
+	font-size: 30px;
+	font-family: Oswald;
+	color: #fff;
+	/*padding: 6px 0 13px 0;*/
+	padding: 0 0 10px 0;
+	margin-top: 10px;
+}
+.jumbotron p{
+	font-size: 18px;
+	font-family: arial;
+	color: #b4c1e1;
+	width: 400px;
+}
+blockquote{
+	border-left:0 none;
+	padding: 40px 120px;
+	text-align: center;
+	font-family: arial;
+	font-size: 19px;
+}
+
+blockquote span {
+	display: inline-block;
+	width: 44px;
+	height: 35px;
+	position: absolute;
+	background:transparent url("../img/quotes.png") no-repeat;
+}
+
+blockquote span.start{
+	background-position: 0 0;
+	margin: -25px 0 0 -50px;
+}
+blockquote span.end{
+	background-position: -44px 0;
+	margin: 5px 0px 0px 20px;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 300px;
+  margin-bottom: 25px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+  padding: 0;
+  bottom: 0;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 300px;
+  background-color: #666;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 300px;
+}
+
+
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+.carousel-indicators{text-align: left;left: 45.5%}
+.carousel-indicators .active{background-color: #4790dd}
+.carousel-indicators lia {
+    background-color: #fff;
+    border: 1px solid #4790dd;
+}
+
+.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left {
+	left: 5%;background-color: #767676;padding: 5px 0 0 5px;
+}
+.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+	right: 0%;background-color: #767676;padding: 5px 5px 0 0;
+}
+.rel-pos{position: relative;height: 300px;}
+.rel-pos img{position: absolute;top: 0;right: 0;}
+.rel-pos h2{
+	position: absolute;
+	top: 40px;
+	width: 150px;
+	text-align: left;
+	font-family: oswald;
+	line-height: 35px;
+	font-size: 36px;
+}
+.rel-pos h2 span{font-size: 28px}
+.rel-pos a{
+	position: absolute;
+	top: 185px;
+	left: 0px;
+	color: #fff;
+}
+.carousel-control{z-index: 10}
+.ver-mod h2{font:bold 22px oswald;text-align: center;color: #4e93ce; }
+.ver-mod span{display: block; width: 293px;height: 141px;background:transparent url("../img/verticle-sprite.jpg") no-repeat;margin: 0 auto 15px;}
+.ver-mod span.sys-img-dev{background-position: 0 0 }
+.ver-mod span.cld-mgt-ptl{background-position: -325px 0 }
+.ver-mod span.ksk-mod-app{background-position: -655px 0 }
+.ver-mod p{text-align: justify;}
+.contact-us{
+	background:#ededed;border-top: 1px solid #d3d3d3;
+	margin-top:35px;padding: 50px 0;  
+}
+.contact-us h3{
+	font:bold 24px oswald;margin-bottom: 20px
+}
+.contact-us dl{
+	margin-top: 0;
+	margin-bottom: 20px;
+	width: 40%;
+	float: left;
+	margin-right: 9%;
+}
+.contact-us dt{
+	font:bold 12px Arial;color: #313131;margin-bottom: 3px;
+}
+.contact-us dd{
+	font-size: 12px;
+}
+.form-control{border-color: #313131;margin-bottom: 17px;}
+.btn-submit{width:100%;background: #96ba3e; letter-spacing: 3px;color: #fff }
+.contact-us form{
+	position: relative;
+}
+.contact-us .ver-hr{
+	position: absolute;
+	width: 1px;
+	height: 335px;
+	border-left: 1px solid #bebebe;
+	top: -48px;
+	left: -50px;
+	border-right: 1px solid #fff;
+}
+.footer{background: #666666;color: #fff}
+.footer p{font-size: 12px;line-height: 24px;margin: 0}
+.contact-us .col-md-8 {
+	overflow: auto;
+}
+.gray-dark{background: #333}
+.gray-dark .icon-bar{background: #fff}
+.nav > li > a:hover, .nav > li > a:focus{background: transparent none;}
